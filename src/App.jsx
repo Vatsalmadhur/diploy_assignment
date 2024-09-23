@@ -5,6 +5,7 @@ import Navbar from "./components/common/Navbar/Navbar"
 import Warning from "./components/common/Warning/Warning"
 import Features from "./components/Features/Features"
 import Footer from "./components/Footer/Footer"
+import Landing from "./components/Landing/Landing"
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
     <Navbar/>
+    <Landing/>
     <Benefits/>
     
     <Warning/>

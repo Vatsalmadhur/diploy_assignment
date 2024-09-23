@@ -8,7 +8,7 @@ const CustomCardV1 = (props) => {
 
       <div>
       <div className="px-6 py-4">
-        <div className="font-bold text-xl ">{props.title}</div>
+        <div className="font-bold text-xl greenFont ">{props.title}</div>
         <div className="font-bold text-xl mb-2">{props.subTitle}</div>
         <p className="text-gray-700 text-base">
           {props.description}

@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.greenBrdr{
+/* border-color: #5ac47c; */
+border-color: #1e7a46;
+}
+
+.greenFont{
+    color: #5ac47c;
+}
