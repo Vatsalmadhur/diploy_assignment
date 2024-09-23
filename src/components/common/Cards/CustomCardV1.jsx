@@ -3,7 +3,7 @@ import React from 'react'
 const CustomCardV1 = (props) => {
   return (
     <>
-      <div className={`w-[600px] rounded overflow-hidden shadow-lg flex ${props.idx == 2 ? 'flex-row-reverse' : 'flex-row'} items-center justify-between border-2 my-5`}>
+      <div className={`w-[600px] rounded overflow-hidden shadow-lg px-[100px] greenBrdr flex ${props.idx == 2 ? 'flex-row-reverse' : 'flex-row'} items-center justify-between border-2 my-5`}>
       <img className="w-[200px]" src={props.imgSrc} alt="Image here" />
 
       <div>

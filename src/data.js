@@ -1,15 +1,18 @@
 export const BenefitData=[
     {
+        idx:1,
         imgSrc:"public/p1.svg",
         Heading:"Best Prices",
         subHeading:"We offer some of the lowest prices in the industry because print providers continuously compete to win your business."
     },
     {
+        idx:2,
         imgSrc:"public/p2.svg",
         Heading:"Robust Scaling",
         subHeading:"Easily handle peak holiday seasons, with our wide network of partners and automatic routing functionality. "
     }, 
     {
+        idx:3,
         imgSrc:"public/p3.svg",
         Heading:"Higher Selections",
         subHeading:"With 900+ products and top quality brands, you can choose the best products for your business. "
@@ -39,3 +42,13 @@ export const FeatureData=[
         description:"Once an order is placed, we automatically handle all the printing and delivery logistics "
     }
 ]
+
+export const navLinks = [
+    { href: "#", label: "Catalog" },
+    { href: "#", label: "How it works" },
+    { href: "#", label: "Pricing" },
+    { href: "#", label: "Blog" },
+    { href: "#", label: "Services" },
+    { href: "#", label: "Use-cases" },
+    { href: "#", label: "Need help?" },
+  ];

@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 .greenBrdr{
-/* border-color: #5ac47c; */
-border-color: #1e7a46;
+border-color: #5ac47c;
+/* border-color: #1e7a46; */
+}
+.greenBg{
+    background-color: #5ac47c;
 }
 
 .greenFont{

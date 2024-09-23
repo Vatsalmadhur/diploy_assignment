@@ -6,9 +6,9 @@ const Landing = () => {
   return (
     <>
     <div className="w-screen h-screen bg-[url('/homeBg.svg')] bg-center bg-cover bg-no-repeat flex   items-center justify-around" >
-    <div className='w-[600px] min-h-[300px] h-auto flex items-start justify-center flex-col mb-[200px]' >
+    <div className='w-[600px] min-h-[300px] h-auto flex items-start justify-center flex-col mb-[200px] ml-[100px]' >
         <p className='text-5xl text-black font-bold'>Create and sell custom products.</p>
-        <div>
+        <div className='my-5' >
           {  ["100% free to use","900+ High-Quality Products","Largest Global Print Network"].map((ele)=>(
             <div className='my-3 flex items-center justify-start '>
             <span className='bg-white w-8 h-8 rounded-full flex items-center justify-center'>

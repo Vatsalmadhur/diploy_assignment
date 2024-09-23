@@ -14,11 +14,17 @@ function App() {
     <>
     <Navbar/>
     <Landing/>
+
     <Benefits/>
     
     <Warning/>
     <Features/>
     <Banner/>
+    <Warning/>
+    <Warning/>
+
+
+
     <Footer/>
     </>
   )
