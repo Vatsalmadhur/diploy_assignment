@@ -13,7 +13,7 @@ const Navbar = () => {
               <span className="sr-only">Your Company</span>
               <img
                 className="h-[70px] w-[150px]"
-                src="public/logo.png"
+                src={"/assets/logo.png"}
                 alt="Logo"
               />
             </a>
