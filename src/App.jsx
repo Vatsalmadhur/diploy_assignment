@@ -8,6 +8,8 @@ import Demo from "./components/Demo/Demo"
 import Features from "./components/Features/Features"
 import Footer from "./components/Footer/Footer"
 import Landing from "./components/Landing/Landing"
+import MakeMoney from "./components/MakeMoney/MakeMoney"
+import FeedBack from "./components/UserFeedBack/FeedBack"
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
     <ConnectStore/>
     <Features/>
     <Banner/>
+    <FeedBack/>
+    <MakeMoney/>
     <Warning/>
     <Warning/>
 
