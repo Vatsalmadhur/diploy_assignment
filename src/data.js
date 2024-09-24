@@ -52,3 +52,12 @@ export const navLinks = [
     { href: "#", label: "Use-cases" },
     { href: "#", label: "Need help?" },
   ];
+
+  export const demoCardData=[{
+    imageSrc:'/assets/clothes.webp',
+    title: 'Easily add your design to a wide range of products' ,
+    description:'With our free design tools, you can easily add your custom designs to t-shirts, mugs, phone cases, and hundreds of other products'
+  }]
+
+  export const marqueeData1=['/marqueeImg/api.png','/marqueeImg/squarespace.svg','/marqueeImg/shopify.svg','/marqueeImg/prestashop.svg']
+  export const marqueeData2=['/marqueeImg/etsy.svg','/marqueeImg/BigCommerce.png','/marqueeImg/wix.svg','/marqueeImg/woocommerce.svg']
