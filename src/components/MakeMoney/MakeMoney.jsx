@@ -3,10 +3,10 @@ import React from "react";
 const MakeMoney = () => {
   return (
     <>
-      <div className="w-screen min-h-screen h-auto flex items-center  justify-center ">
+      <div className="w-screen min-h-[60vh] h-auto flex items-center  justify-center mb-[50px]">
         <div className="lg:w-[75%] md:w-[85%] sm:w-[95%] lg:h-[430px] md:h-[400px] sm:h-[350px] bg-gray-900 flex  justify-start md:gap-5 sm:gap-2 p-10 rounded-3xl flex-row relative ">
             <div className=" flex items-start flex-col justify-center md:gap-5 sm:gap-2 gap-5 lg:w-[350px]  sm:w-[300px] " >
-          <p className="lg:text-4xl text-3xl  text-white font-bold ">Make Money,Risk-Free</p>
+          <p className="lg:text-4xl text-4xl  text-white font-bold ">Make Money,Risk-Free</p>
           <p className="text-lg text-white">
             You pay for fulfillment only when you make a sale.{" "}
           </p>

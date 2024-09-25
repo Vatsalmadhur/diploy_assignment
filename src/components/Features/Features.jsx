@@ -5,7 +5,11 @@ import CustomCardV1 from '../common/Cards/CustomCardV1'
 const Features = () => {
   return (
    <>
-   <div className='w-screen min-h-screen h-auto flex items-center justify-center flex-wrap border-2 ' >
+   <div className='sm:my-[20vh]'>
+   <p className='text-5xl text-black font-semibold text-start p-5 sm:ml-[100px]'>Enjoy exclusive features</p>
+   <div className='w-screen min-h-screen h-auto flex items-center justify-center flex-wrap ' >
+   
+
     {FeatureData.map((data,index)=>(
         <div className= { index%2==0?'w-[80%] flex items-center justify-start'
             :
@@ -16,8 +20,9 @@ const Features = () => {
         <CustomCardV1 imgSrc={data.imgSrc} title={data.title} subTitle={data.subTitle} description={data.description} idx={data.idx}/>
         </div>
     ))}
-    </div></>
-  )
+    </div>
+    </div>
+    </>  )
 }
 
 export default Features

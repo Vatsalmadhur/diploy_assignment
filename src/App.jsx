@@ -18,20 +18,13 @@ function App() {
     <>
     <Navbar/>
     <Landing/>
-
     <Benefits/>
     <Demo/>
-    <Warning/>
     <ConnectStore/>
     <Features/>
     <Banner/>
-    {/* <FeedBack/> */}
+    <FeedBack/>
     <MakeMoney/>
-    <Warning/>
-    <Warning/>
-
-
-
     <Footer/>
     </>
   )

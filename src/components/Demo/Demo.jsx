@@ -7,7 +7,7 @@ const Demo = () => {
   const [mobile, setMobile] = useState(false);
 
   const handleResize = () => {
-    if (window.innerWidth < 420) {
+    if (window.innerWidth < 768) {
       setMobile(true);
     } else {
       setMobile(false);
@@ -23,7 +23,7 @@ const Demo = () => {
   console.log(mobile);
   return (
     <>
-      <div className="w-screen h-screen border-2">
+      <div className="w-screen min-h-[70vh] h-auto flex items-center justify-center ">
         {mobile===true
           ? demoCardData.map((data) => (
             <DemoCardMobile
