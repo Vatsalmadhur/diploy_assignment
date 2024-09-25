@@ -6,7 +6,7 @@ const CustomCardV1 = (props) => {
       <div
         className={`w-[600px] rounded overflow-hidden shadow-lg sm:px-[100px] px-10 py-3 greenBrdr flex sm:flex-nowrap flex-wrap 
           ${props.idx == 2 ? "flex-row-reverse" : "flex-row"}
-           items-center sm:justify-between justify-center border-2 my-5`}
+           items-center sm:justify-between justify-center border-2 my-5 bg-white`}
       >
         <img className="w-[200px]" src={props.imgSrc} alt="Image here" />
 

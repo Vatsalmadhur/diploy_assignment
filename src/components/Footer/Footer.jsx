@@ -1,57 +1,73 @@
-// Footer.js
 import React from 'react';
 
 const Footer = () => {
+    const integrations = [
+        "Shopify", "Etsy", "eBay", "Amazon", "TikTok Shop", 
+        "PrestaShop", "BigCommerce", "Wix", "WooCommerce", "Squarespace", 
+        "Printify API"
+    ];
+
+    const discover = [
+        "Blog", "Guides", "Products", 
+        "Etsy print-on-demand", "Shopify print-on-demand", 
+        "WooCommerce print-on-demand", "Wix print-on-demand", 
+        "Squarespace print-on-demand", "Make Your Own Shirt", "Brands"
+    ];
+
+    const startSelling = [
+        "Custom T-shirts", "Custom Hoodies", "Custom Mugs", 
+        "Custom Socks", "Custom Backpacks", "Custom Branding", 
+        "Sell on Etsy", "Sell on Social Media", 
+        "Free T-shirt Designs", "Custom Products", 
+        "Custom All-Over-Print Hoodies"
+    ];
+
+    const renderList = (items) => (
+        <ul>
+            {items.map((item, index) => (
+                <li key={index}>{item}</li>
+            ))}
+        </ul>
+    );
+
     return (
-        <footer className="bg-gray-200 p-10 text-sm text-gray-700">
+        <footer className="bg-gray-200 p-10 text-sm text-gray-700 px-10">
+            <div className='flex items-center justify-between my-10'>
+
+            <img src="assets/logo.png" alt="" className='w-[200px]' />
+            <div className='flex gap-5 items-center justify-center'>
+                <img src="assets/social/facebook.png" alt="" className='w-[35px] h-[35px] '/>
+                <img src="assets/social/instagram.png" alt="" className='w-[35px] h-[35px]'/>
+                <img src="assets/social/linkedin.png" alt="" className='w-[35px] h-[35px]'/>
+                <img src="assets/social/reddit.png" alt="" className='w-[35px] h-[35px]'/>
+                <img src="assets/social/twitter.png" alt="" className='w-[35px] h-[35px]'/>
+                <img src="assets/social/tiktok.png" alt="" className='w-[35px] h-[35px]'/>
+
+            </div>
+
+            </div>
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
                     <h5 className="font-bold mb-3">Integrations</h5>
-                    <ul>
-                        <li>Shopify</li>
-                        <li>Etsy</li>
-                        <li>eBay</li>
-                        <li>Amazon</li>
-                        <li>TikTok Shop</li>
-                        <li>PrestaShop</li>
-                        <li>BigCommerce</li>
-                        <li>Wix</li>
-                        <li>WooCommerce</li>
-                        <li>Squarespace</li>
-                        <li>Printify API</li>
-                    </ul>
+                    {renderList(integrations)}
                 </div>
                 <div>
                     <h5 className="font-bold mb-3">Discover</h5>
-                    <ul>
-                        <li>Blog</li>
-                        <li>Guides</li>
-                        <li>Products</li>
-                        <li>Etsy print-on-demand</li>
-                        <li>Shopify print-on-demand</li>
-                        <li>WooCommerce print-on-demand</li>
-                        <li>Wix print-on-demand</li>
-                        <li>Squarespace print-on-demand</li>
-                        <li>Make Your Own Shirt</li>
-                        <li>Brands</li>
-                    </ul>
+                    {renderList(discover)}
                 </div>
                 <div>
                     <h5 className="font-bold mb-3">Start Selling</h5>
-                    <ul>
-                        <li>Custom T-shirts</li>
-                        <li>Custom Hoodies</li>
-                        <li>Custom Mugs</li>
-                        <li>Custom Socks</li>
-                        <li>Custom Backpacks</li>
-                        <li>Custom Branding</li>
-                        <li>Sell on Etsy</li>
-                        <li>Sell on Social Media</li>
-                        <li>Free T-shirt Designs</li>
-                        <li>Custom Products</li>
-                        <li>Custom All-Over-Print Hoodies</li>
-                    </ul>
+                    {renderList(startSelling)}
                 </div>
+            </div>
+            <div className="mt-10 border-t border-gray-300 pt-6 text-center ">
+                <ul className=" flex items-center justify-center gap-5">
+                    <li>Terms and Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>Security</li>
+                    <li>Intellectual Property Rights</li>
+                </ul>
+                <p className="mt-4">© 2024 Printify. All rights reserved.</p>
             </div>
         </footer>
     );

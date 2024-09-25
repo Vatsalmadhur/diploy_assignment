@@ -7,7 +7,7 @@ import { ButtonV2 } from '../common/Button/ButtonV2'
 const Benefits = () => {
   return (
     <>
-    <div className='w-screen h-auto  flex items-center justify-evenly flex-wrap border-2 py-10'>
+    <div className='w-screen h-auto  flex items-center justify-evenly flex-wrap py-10'>
         <div className='min-w-[400px] md:w-[45vw] w-[95vw] md:h-[60vh] minh-[40vh] h-auto flex items-start justify-center flex-col lg:px-[100px] md:px-[50px] flex-wrappy-5 gap-3 py-5'>
           <p className='text-4xl text-black font-bold px-5'>What we offer?</p>
           <p className='text-xl text-black px-5'>Create and sell beautiful custom-products in minutes. Printify prints, and delivers 950+ products at the lowest prices around. No risk, all reward.</p>

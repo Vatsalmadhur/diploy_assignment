@@ -6,7 +6,7 @@ const Landing = () => {
   return (
     <>
       <div className="w-screen minh-[80vh] h-auto bg-[url('/assets/home.svg')] bg-center sm:bg-cover bg-auto bg-no-repeat flex items-center   justify-around  sm:flex-nowrap flex-wrap">
-        <div className="sm:w-[600px] min-w-[400px] w-[90vw] min-h-[300px] h-auto flex items-start justify-center flex-col sm:mt-0 mt-5 sm:mb-[200px] sm:ml-[50px] md:ml-[100px] flex-wrap p-5 ">
+        <div className="sm:w-[600px] min-w-[400px] w-[90vw] min-h-[300px] h-auto flex items-start justify-center flex-col sm:mt-10 mt-5 sm:mb-[200px] sm:ml-[50px] md:ml-[100px] flex-wrap p-5 ">
           <p className="text-5xl text-black font-bold ">
             Create and sell custom products.
           </p>

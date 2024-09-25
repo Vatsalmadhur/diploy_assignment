@@ -16,6 +16,7 @@ function App() {
 
   return (
     <>
+    <div className="overflow-auto">
     <Navbar/>
     <Landing/>
     <Benefits/>
@@ -26,6 +27,7 @@ function App() {
     <FeedBack/>
     <MakeMoney/>
     <Footer/>
+    </div>
     </>
   )
 }
