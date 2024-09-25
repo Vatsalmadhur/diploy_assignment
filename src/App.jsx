@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-    <div className="overflow-auto">
+    <div className="overflow-hidden">
     <Navbar/>
     <Landing/>
     <Benefits/>

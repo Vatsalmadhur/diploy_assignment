@@ -1,13 +1,18 @@
 import React from "react";
 import { ButtonV1 } from "../common/Button/ButtonV1";
 import { ButtonV2 } from "../common/Button/ButtonV2";
-
+import { useGSAP } from "@gsap/react";
+import gsap from 'gsap';
 const Landing = () => {
+  useGSAP(()=>{
+    gsap.to('#mainHead',{opacity:1,duration:2})
+    gsap.to('#list',{stagger:1,y:0,opacity:1})
+  })
   return (
     <>
       <div className="w-screen minh-[80vh] h-auto bg-[url('/assets/home.svg')] bg-center sm:bg-cover bg-auto bg-no-repeat flex items-center   justify-around  sm:flex-nowrap flex-wrap">
         <div className="sm:w-[600px] min-w-[400px] w-[90vw] min-h-[300px] h-auto flex items-start justify-center flex-col sm:mt-10 mt-5 sm:mb-[200px] sm:ml-[50px] md:ml-[100px] flex-wrap p-5 ">
-          <p className="text-5xl text-black font-bold ">
+          <p id="mainHead" className="text-5xl text-black font-bold opacity-0 ">
             Create and sell custom products.
           </p>
           <div className="my-5">
@@ -24,12 +29,12 @@ const Landing = () => {
                     className="w-5 h-5"
                   />
                 </span>
-                <p className="text-xl text-black mx-1">{ele}</p>
+                <p id="list" className="text-xl text-black mx-1 opacity-0">{ele}</p>
               </div>
             ))}
-            <div className="flex gap-3">
-              <ButtonV1 content="Try for free" />
-              <ButtonV2 content="How it works" />
+            <div className="flex gap-3 ">
+              <ButtonV1  content="Try for free"  />
+              <ButtonV2  content="How it works" />
             </div>
           </div>
         </div>

@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import { navLinks } from "../../../data";
 import { ButtonV2 } from "../Button/ButtonV2";
+import { useGSAP } from "@gsap/react";
+import {gsap} from 'gsap'
 
 const Navbar = () => {
   // State to manage the mobile menu visibility
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  useGSAP(()=>{
+    gsap.from('#link',{stagger:0.1,y:-20,opacity:0})
+  })
 
   return (
     <nav className="bg-white shadow-md greenBg">
@@ -36,12 +41,12 @@ const Navbar = () => {
           </div>
           <div className={`${isMobileMenuOpen ? "block" : "hidden"} absolute top-16 inset-x-0 p-2 transition transform origin-top-right md:hidden`}>
             <div className="rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-              <div className="p-5 flex flex-col space-y-4">
+              <div  className="p-5 flex flex-col space-y-4">
                 {navLinks.map((link, index) => (
                   <a
                     key={index}
                     href={link.href}
-                    className="text-lg font-medium text-gray-900 hover:text-gray-700"
+                    className="text-lg font-medium text-gray-900 hover:text-gray-700 "
                   >
                     {link.label}
                   </a>
@@ -54,9 +59,10 @@ const Navbar = () => {
             <div className="flex space-x-4">
               {navLinks.map((link, index) => (
                 <a
+                id="link"
                   key={index}
                   href={link.href}
-                  className="text-lg font-medium text-gray-900 hover:text-indigo-600"
+                  className="text-lg font-medium text-gray-900 hover:text-indigo-600 opacity-1"
                 >
                   {link.label}
                 </a>
