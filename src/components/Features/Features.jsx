@@ -9,7 +9,7 @@ const Features = () => {
     {FeatureData.map((data,index)=>(
         <div className= { index%2==0?'w-[80%] flex items-center justify-start'
             :
-            'w-[90%] flex items-center justify-end'
+            'w-[90%] flex items-center sm:justify-end'
         }
         
         > 

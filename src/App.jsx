@@ -25,7 +25,7 @@ function App() {
     <ConnectStore/>
     <Features/>
     <Banner/>
-    <FeedBack/>
+    {/* <FeedBack/> */}
     <MakeMoney/>
     <Warning/>
     <Warning/>
