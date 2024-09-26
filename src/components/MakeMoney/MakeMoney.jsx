@@ -21,7 +21,7 @@ const MakeMoney = () => {
             </div>
             <div className="border-white border-t-2" ></div>
             <div className="flex items-center justify-between ">
-              <p className="greenFont text-xl font-bold ">You Profit</p>
+              <p className="greenFont text-xl font-bold ">Your Profit</p>
               <p className="greenFont text-xl font-bold">$18</p>
             </div>
           </div>

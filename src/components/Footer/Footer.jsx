@@ -32,7 +32,7 @@ const Footer = () => {
 
     return (
         <footer className="bg-gray-200 p-10 text-sm text-gray-700 px-10">
-            <div className='flex items-center justify-between my-10'>
+            <div className='flex items-center justify-between flex-wrap my-10 gap-10'>
 
             <img src="assets/logo.png" alt="" className='w-[200px]' />
             <div className='flex gap-5 items-center justify-center'>
@@ -46,8 +46,8 @@ const Footer = () => {
             </div>
 
             </div>
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
+            <div className="max-w-7xl  flex items-center justify-around flex-wrap gap-8 ">
+                <div className='w-[200px]'>
                     <h5 className="font-bold mb-3">Integrations</h5>
                     {renderList(integrations)}
                 </div>
