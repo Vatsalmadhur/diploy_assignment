@@ -2,23 +2,23 @@ import React from 'react';
 
 const Footer = () => {
     const integrations = [
-        "Shopify", "Etsy", "eBay", "Amazon", "TikTok Shop", 
-        "PrestaShop", "BigCommerce", "Wix", "WooCommerce", "Squarespace", 
+        "Shopify", "Etsy", "eBay", "Amazon", "TikTok Shop",
+        "PrestaShop", "BigCommerce", "Wix", "WooCommerce", "Squarespace",
         "Printify API"
     ];
 
     const discover = [
-        "Blog", "Guides", "Products", 
-        "Etsy print-on-demand", "Shopify print-on-demand", 
-        "WooCommerce print-on-demand", "Wix print-on-demand", 
+        "Blog", "Guides", "Products",
+        "Etsy print-on-demand", "Shopify print-on-demand",
+        "WooCommerce print-on-demand", "Wix print-on-demand",
         "Squarespace print-on-demand", "Make Your Own Shirt", "Brands"
     ];
 
     const startSelling = [
-        "Custom T-shirts", "Custom Hoodies", "Custom Mugs", 
-        "Custom Socks", "Custom Backpacks", "Custom Branding", 
-        "Sell on Etsy", "Sell on Social Media", 
-        "Free T-shirt Designs", "Custom Products", 
+        "Custom T-shirts", "Custom Hoodies", "Custom Mugs",
+        "Custom Socks", "Custom Backpacks", "Custom Branding",
+        "Sell on Etsy", "Sell on Social Media",
+        "Free T-shirt Designs", "Custom Products",
         "Custom All-Over-Print Hoodies"
     ];
 
@@ -31,11 +31,11 @@ const Footer = () => {
     );
 
     return (
-        <footer className="bg-gray-200 p-10 text-sm text-gray-700 px-10">
-            <div className='flex items-center justify-between flex-wrap my-10 gap-10'>
+        <footer className="bg-gray-200 p-10 text-sm text-gray-700 px-10 flex items-center justify-center flex-col ">
+            <div className='flex items-center justify-between flex-wrap my-10 gap-10 w-[70vw] pb-10'>
 
             <img src="assets/logo.png" alt="" className='w-[200px]' />
-            <div className='flex gap-5 items-center justify-center'>
+            <div className='flex gap-5 items-center justify-center '>
                 <img src="assets/social/facebook.png" alt="" className='w-[35px] h-[35px] '/>
                 <img src="assets/social/instagram.png" alt="" className='w-[35px] h-[35px]'/>
                 <img src="assets/social/linkedin.png" alt="" className='w-[35px] h-[35px]'/>
@@ -46,7 +46,7 @@ const Footer = () => {
             </div>
 
             </div>
-            <div className="max-w-7xl  flex items-center justify-around flex-wrap gap-8 ">
+            <div className="w-[60vw]  flex items-center justify-around flex-wrap gap-8  ">
                 <div className='w-[200px]'>
                     <h5 className="font-bold mb-3">Integrations</h5>
                     {renderList(integrations)}
